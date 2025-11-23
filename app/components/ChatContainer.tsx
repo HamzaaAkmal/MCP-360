@@ -196,7 +196,7 @@ export function ChatContainer({ user: _user }: ChatContainerProps) {
       />
 
       {/* Sidebar toggle button - always visible */}
-      <div className="fixed top-[120px] left-4 z-40">
+      <div className="fixed top-4 left-4 z-40">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="p-2 hover:bg-gray-100 rounded"

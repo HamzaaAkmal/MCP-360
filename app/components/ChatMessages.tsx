@@ -47,7 +47,7 @@ export function ChatMessages({
   }, [messages, streamingContent]);
 
   return (
-    <div className="flex-1 overflow-y-auto px-6 py-4">
+    <div className="flex-1 overflow-y-auto px-4 sm:px-6 py-4">
       <div className="max-w-3xl mx-auto space-y-6">
         {messages.map(message => {
           // Check if this message has a REQUEST_USER_INPUT tool call
@@ -82,7 +82,7 @@ export function ChatMessages({
                   {message.sender === 'assistant' ? (
                     <MarkdownContent content={message.content} />
                   ) : (
-                    <p className="font-inter text-sm leading-relaxed">{message.content}</p>
+                    <p className="font-semibold text-sm leading-relaxed" style={{ fontFamily: 'Poppins' }}>{message.content}</p>
                   )}
                 </div>
 

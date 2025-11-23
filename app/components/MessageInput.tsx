@@ -18,9 +18,10 @@ export function MessageInput({
   isLoading 
 }: MessageInputProps) {
   const placeholderSuggestions = [
-    "Hey Rube, can you fetch my emails",
-    "Hey Rube, can you search my twitter",
-    "Hey Rube, can you fetch the reddit posts in r/localllama"
+    "Ask me anything...",
+    "Hey Rube, fetch my emails",
+    "Search my Twitter feed",
+    "Get Reddit posts"
   ];
 
   const [currentPlaceholderIndex, setCurrentPlaceholderIndex] = useState(0);
@@ -53,7 +54,8 @@ export function MessageInput({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
-          className="font-inter m-1 w-full resize-none border-0 bg-transparent px-2 sm:px-3 py-2 text-sm leading-relaxed text-gray-900 focus:outline-none focus:ring-0 disabled:cursor-not-allowed disabled:opacity-50"
+          className="font-semibold m-1 w-full resize-none border-0 bg-transparent px-2 sm:px-3 py-2 text-sm leading-relaxed text-gray-900 focus:outline-none focus:ring-0 disabled:cursor-not-allowed disabled:opacity-50"
+          style={{ fontFamily: 'Poppins' }}
           placeholder={displayPlaceholder}
         />
       </div>

@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-flecha: var(--font-flecha);
+  --font-poppins: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -187,7 +188,7 @@ body {
   text-align: center;
   font-family: "Indigo Antiqua 2 Bold Italic", Flecha, serif;
   --tw-text-opacity: 1;
-  font-size: 2.25rem;
+  font-size: 3rem;
   scrollbar-width: thin;
   scrollbar-color: #c9c6c5 transparent;
   box-sizing: border-box;
@@ -206,7 +207,7 @@ body {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background-size: 300% 100%;
-  animation: animateGradient 1s ease-out forwards;
+  animation: animateGradient 3s ease-in-out infinite;
   padding-left: .25rem;
   padding-right: .25rem;
   font-weight: 900;
